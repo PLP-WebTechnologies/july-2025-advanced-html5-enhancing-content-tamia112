@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        header, main, footer {
+            margin-bottom: 40px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .media {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to page</h1>
+    <p>assingment 2</p>
+</header>
+
+<main>
+    
+    <section>
+        <h2>My Favorite Hobbies</h2>
+        <ul>
+            <li>Reading books</li>
+            <li>Playing guitar</li>
+            <li>Coding web applications</li>
+            <li>Traveling and exploring new places</li>
+        </ul>
+
+        <h2>Daily Schedule</h2>
+        <ol>
+            <li>Morning exercise</li>
+            <li>Breakfast</li>
+            <li>Work/study</li>
+            <li>Lunch break</li>
+            <li>Leisure or hobbies</li>
+            <li>Dinner and relaxation</li>
+            <li>Sleep</li>
+        </ol>
+    </section>
+
+    
+    <section>
+        <h2>Weekly Meal Plan</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Breakfast</th>
+                    <th>Lunch</th>
+                    <th>Dinner</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Oatmeal</td>
+                    <td>Chicken salad</td>
+                    <td>Grilled fish</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Eggs & toast</td>
+                    <td>Pasta</td>
+                    <td>Vegetable stir-fry</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Smoothie</td>
+                    <td>Sandwich</td>
+                    <td>Chicken curry</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+        <h2>Media Examples</h2>
+        <div class="media">
+            <h3>Image Example</h3>
+            <img src="C:\Users\Administrator\Pictures\Kindle Wallpaper.jpg" alt="Placeholder image" width="400">
+        </div>
+        <div class="media">
+            <h3>Audio Example</h3>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="media">
+            <h3>Video Example</h3>
+            <video width="400" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    
+    <section>
+        <h2>Contact & Feedback Form</h2>
+        <form action="#" method="post">
+           
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="jane doe" required minlength="3">
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+254 ********" pattern="\+?\d{9,15}">
+
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob" required>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <label for="topic">Preferred Contact Method *</label>
+                <select id="topic" name="topic" required>
+                    <option value="">Select an option</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="none">No Contact</option>
+                </select>
+
+                <label>Newsletter Subscription</label>
+                <input type="checkbox" id="news1" name="newsletter" value="weekly">
+                <label for="news1">Weekly Updates</label><br>
+                <input type="checkbox" id="news2" name="newsletter" value="monthly">
+                <label for="news2">Monthly Updates</label>
+            </fieldset>
+
+           
+            <fieldset>
+                <legend>Feedback</legend>
+
+                <label for="feedback">Your Message *</label>
+                <textarea id="feedback" name="feedback" rows="5" placeholder="Type your message here..." required></textarea>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Enhanced HTML Example. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
